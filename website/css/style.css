@@ -1,0 +1,358 @@
+:root {
+    --blue: #1e90ff;
+    --white-text: #f2f2f2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+*:hover{
+    outline: 1px solid blueviolet;
+    outline-offset: -1px;
+}
+*/
+
+
+#nav-bar{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    color: var(--white-text);
+    background-color: black;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+.logo{
+    display: flex;
+    margin: 10px;
+}
+
+/* MENU */
+.menu{
+    display: none;
+    align-items:center;
+}
+
+.menu a, .icon{
+    color: var(--white-text);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.menu a:hover, .icon:hover{
+    background-color: #333;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+    width: 100%;
+    height: 4px;
+    background: rgba(0, 0, 0, 0);
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 4px;
+    background: #11ac4c;
+    width: 0%;
+}
+
+/*----------------------------------------*/
+/*---              HEADER              ---*/
+/*----------------------------------------*/
+header{
+    min-height: 100vh;
+    color: var(--white-text);
+    background-image: radial-gradient(circle at 50% 0%,#666666, black 75%);
+}
+
+
+/* TITLE */
+
+#first-page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title, #subtitle{
+    text-align: center;
+    font-size: clamp(3rem, 1rem + 10vmin, 9rem);
+    font-weight: bold;
+    background-image: linear-gradient(to right,#23966c, #faaa54, #e23b4a, #db0768, #360670);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#subtitle{
+    font-size: clamp(2rem, 0.6939rem + 6.5306vw, 6rem);
+}
+
+
+
+/*----------------------------------------*/
+/*---               MAIN               ---*/
+/*----------------------------------------*/
+main section{
+    min-height: 50vh;
+    text-align: center;
+    padding: 1rem;
+}
+
+.page-title{
+    font-size: 3rem;
+    font-weight: bold;
+    background-image: linear-gradient(to top, #c471f5 45%, #fa71cd 55%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-text{
+
+}
+
+/*----------------------------------------*/
+/*---             ABOUT ME             ---*/
+/*----------------------------------------*/
+#about{
+    background-color: black;
+}
+
+/*----------------------------------------*/
+/*---              SKILLS              ---*/
+/*----------------------------------------*/
+
+/* Container for skill bars */
+.container {
+    margin: 5px auto;
+    width: 100%;
+    max-width: 800px;
+    background-color: #ddd; /* Grey background */
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    color: white;
+}
+
+.skills-VHDL {width: 95%; background-color: #4CAF50;}
+.skills-Verilog {width: 75%; background-color: #4CAF50;}
+.skills-SystemC {width: 90%; background-color: #4CAF50;}
+.skills-SystemVerilog {width: 75%; background-color: #4CAF50;}
+
+.skills-C{width: 95%; background-color: #4CAF50;}
+.skills-Cpp{width: 95%; background-color: #4CAF50;}
+.skills-Cs{width: 90%; background-color: #4CAF50;}
+.skills-Java{width: 85%; background-color: #4CAF50;}
+.skills-VB{width: 40%; background-color: #4CAF50;}
+.skills-Kotlin{width: 80%; background-color: #4CAF50;}
+
+.skills-Tcl{width: 80%; background-color: #4CAF50;}
+.skills-Matlab{width: 75%; background-color: #4CAF50;}
+.skills-Python{width: 70%; background-color: #4CAF50;}
+.skills-js{width: 80%; background-color: #4CAF50;}
+.skills-bash{width: 90%; background-color: #4CAF50;}
+.skills-GDScript{width: 85%; background-color: #4CAF50;}
+.skills-html{width: 90%; background-color: #4CAF50;}
+.skills-css{width: 85%; background-color: #4CAF50;}
+.skills-php{width: 5%; background-color: #4CAF50;}
+
+
+/*----------------------------------------*/
+/*---              CONTACT             ---*/
+/*----------------------------------------*/
+#contact{
+    font-family: Arial;
+    min-height: 50vh;
+    background-color: rgb(50, 50, 50);
+}
+/* The browser window */
+.contact-container {
+    margin: auto;
+    min-height: 300px;
+    width: 100%;
+    max-width: 800px;
+    border: 3px solid #f1f1f1;
+    background-color: white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  
+  /* Container for columns and the top "toolbar" */
+  .row {
+    padding: 10px;
+    background: #f1f1f1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  
+  /* Create three unequal columns that floats next to each other */
+  .column {
+    float: left;
+  }
+  
+  .left {
+    width: 15%;
+  }
+  
+  .right {
+    width: 10%;
+  }
+  
+  .middle {
+    width: 75%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Three dots */
+  .dot {
+    margin-top: 4px;
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  /* Style the input field */
+  input[type=text] {
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+    margin-top: -8px;
+    height: 25px;
+    color: #666;
+    padding: 5px;
+  }
+  
+  /* Three bars (hamburger menu) */
+  .bar {
+    width: 17px;
+    height: 3px;
+    background-color: #aaa;
+    margin: 3px 0;
+    display: block;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 10px;
+  }
+
+  /* Style all font awesome icons */
+.fab, .fas {
+    font-size: 2rem;
+    padding: 10px;
+    margin: 10px 5px;
+    width: 50px;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fab:hover, .fas:hover {
+    opacity: 0.7;
+}
+
+/* Facebook */
+.fa-envelope{
+    background: #3B5998;
+    color: white;
+}
+
+.fa-facebook-f {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+  
+  
+
+/*----------------------------------------*/
+/*---              FOOTER              ---*/
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/*---             COPYRIGHT            ---*/
+/*----------------------------------------*/
+.footer-copyright{
+    font-size: 0.85rem;
+    padding: 1.5rem 3rem;
+    color: var(--white-text);
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact{
+    text-align: center;
+}
+
+/*----------------------------------------*/
+
+/* This applies from 601px onwards */
+@media screen and (min-width: 601px) {
+    .menu{
+        display: flex;
+    }
+    .icon{
+        visibility: hidden;
+    }
+    .container {
+        width: 80%;
+    }
+    .contact-container {
+        width: 80%;
+    }
+    .footer-copyright {
+        flex-flow: row;
+    }
+}
+
+/* This applies from 992px onwards */
+@media screen and (min-width: 992px) {
+
+}
